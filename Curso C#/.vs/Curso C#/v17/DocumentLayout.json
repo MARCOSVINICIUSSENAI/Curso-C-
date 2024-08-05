@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\operadoresaritmeticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:operadoresaritmeticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\exerciciooperadoresaritmeticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:exerciciooperadoresaritmeticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\exercicotipoprimitivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:exercicotipoprimitivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\tiposprimitivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:tiposprimitivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\operadoresaritmeticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:operadoresaritmeticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\entradasaidadados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:entradasaidadados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\curso c#.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:curso c#.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\tiposprimitivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:tiposprimitivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,19 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ExercicioOperadoresAritmeticos.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ExercicioOperadoresAritmeticos.cs",
+              "RelativeDocumentMoniker": "ExercicioOperadoresAritmeticos.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ExercicioOperadoresAritmeticos.cs",
+              "RelativeToolTip": "ExercicioOperadoresAritmeticos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T20:32:38.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OperadoresAritmeticos.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\OperadoresAritmeticos.cs",
               "RelativeDocumentMoniker": "OperadoresAritmeticos.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\OperadoresAritmeticos.cs",
               "RelativeToolTip": "OperadoresAritmeticos.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwDEAAAA3AAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAA0wBoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T19:26:05.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "EntradaSaidaDados.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\EntradaSaidaDados.cs",
               "RelativeDocumentMoniker": "EntradaSaidaDados.cs",
@@ -68,13 +85,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ExercicoTipoPrimitivo.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ExercicoTipoPrimitivo.cs",
               "RelativeDocumentMoniker": "ExercicoTipoPrimitivo.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ExercicoTipoPrimitivo.cs",
               "RelativeToolTip": "ExercicoTipoPrimitivo.cs",
-              "ViewState": "AQIAACMBAAAAAAAAAAAAAEkBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T17:20:32.555Z",
               "EditorCaption": ""
@@ -82,7 +99,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Curso C#",
+              "Title": "Curso C#.csproj",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Curso C#.csproj",
               "RelativeDocumentMoniker": "Curso C#.csproj",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Curso C#.csproj",
@@ -94,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "TiposPrimitivos.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\TiposPrimitivos.cs",
               "RelativeDocumentMoniker": "TiposPrimitivos.cs",
@@ -102,12 +119,11 @@
               "RelativeToolTip": "TiposPrimitivos.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAgwAsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T19:27:56.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T19:27:56.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
