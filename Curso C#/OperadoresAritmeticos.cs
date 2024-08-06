@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Curso_C_
-{
-    public static class OperadoresAritmeticos
+//namespace Curso_C_
+// {
+    // public static class OperadoresAritmeticos
     /*
       SOMA = +
       SUBTRAÇÃO = -
       DIVISÃO = /
       MULTIPLICAÇÃO = *
-    */
+    *
     {
 
 
@@ -66,6 +66,6 @@ namespace Curso_C_
         }
         }
     }
-
+    */
 
 

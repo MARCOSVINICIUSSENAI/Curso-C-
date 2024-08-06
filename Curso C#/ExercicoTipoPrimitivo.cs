@@ -6,14 +6,14 @@ using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Curso_C_
+/* namespace Curso_C_
 {
     public class ExercicoTipoPrimitivo
-    {
+    {*/
         //Modifique o método LerArmazenar para armazenar o sobrenome do usuário e
         //exibi-lo junto com o nome:
 
-        public static void Exercicio01()
+       /* public static void Exercicio01()
         {
             string? nome;
             string? sobrenome;
@@ -331,4 +331,4 @@ namespace Curso_C_
 
 
     }
-}
+}*/
