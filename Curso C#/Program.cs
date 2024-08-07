@@ -1,5 +1,5 @@
-﻿using Curso_C_.exercicio;
-using CursoCSharp.Exercicios;
+﻿//using Curso_C_.exercicio;
+//using CursoCSharp.Exercicios;
 //OperadoresAritmeticos.Subtracao();
 //OperadoresAritmeticos.divisao();
 //OperadoresAritmeticos.Multiplicacao();
@@ -51,3 +51,14 @@ using CursoCSharp.Exercicios;
 // ExercicioOperadoresAritmeticos.Exercicio18();
 // ExercicioOperadoresAritmeticos.Exercicio19();
 // ExercicioOperadoresAritmeticos.Exercicio20();
+
+
+
+
+/*bool resultado;
+resultado = OperadoresLogicos.Elogico(true, true);
+Console.WriteLine($"O resultado do operador Logico é:{resultado}");
+resultado = OperadoresLogicos.OULogico(true, true);
+Console.WriteLine($"O resultado do operador Logico é:{resultado}");
+resultado = OperadoresLogicos.negacao(true, true);
+Console.WriteLine($"O resultado do operador Logico é:{resultado}");*/

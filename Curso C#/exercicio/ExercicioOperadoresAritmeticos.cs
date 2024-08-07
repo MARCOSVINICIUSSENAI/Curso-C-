@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CursoCSharp.Exercicios
+/*namespace CursoCSharp.Exercicios
 {
     public class ExercicioOperadoresAritmeticos
     {
@@ -13,49 +13,49 @@ namespace CursoCSharp.Exercicios
            calcule a soma desses números. Exiba o resultado com uma mensagem que informe a 
            soma dos dois números. */
 
-        public static void Exercicio1()
-        {
+/*public static void Exercicio1()
+{
 
-            Console.Write("Digite o primeiro número: ");
-            int numero1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Digite o segundo número: ");
-            int numero2 = Convert.ToInt32(Console.ReadLine());
-            int soma = numero1 + numero2;
-            Console.WriteLine($"A soma dos números {numero1} e {numero2} é {soma}.");
-        }
+    Console.Write("Digite o primeiro número: ");
+    int numero1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Digite o segundo número: ");
+    int numero2 = Convert.ToInt32(Console.ReadLine());
+    int soma = numero1 + numero2;
+    Console.WriteLine($"A soma dos números {numero1} e {numero2} é {soma}.");
+}
 
 
-        /* 2. Questão: Peça ao usuário para inserir dois números inteiros e calcule a diferença entre
-           o primeiro e o segundo número. Exiba o resultado com uma mensagem que informe a
-           subtração. */
-        public static void Exercicio2()
-        {
+/* 2. Questão: Peça ao usuário para inserir dois números inteiros e calcule a diferença entre
+   o primeiro e o segundo número. Exiba o resultado com uma mensagem que informe a
+   subtração. */
+/*public static void Exercicio2()
+{
 
-            Console.Write("Digite o primeiro número: ");
-            int numero1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Digite o segundo número: ");
-            int numero2 = Convert.ToInt32(Console.ReadLine());
-            int diferenca = numero1 - numero2;
-            Console.WriteLine($"A diferença entre {numero1} e {numero2} é {diferenca}.");
-        }
+    Console.Write("Digite o primeiro número: ");
+    int numero1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Digite o segundo número: ");
+    int numero2 = Convert.ToInt32(Console.ReadLine());
+    int diferenca = numero1 - numero2;
+    Console.WriteLine($"A diferença entre {numero1} e {numero2} é {diferenca}.");
+}
 
-        /* 3. Questão: Solicite ao usuário para inserir dois números inteiros e calcule a
-           multiplicação desses números. Exiba o resultado com uma mensagem que informe a
-           multiplicação. */
-        public static void Exercicio3()
-        {
-            Console.Write("Digite o primeiro numero: ");
-            int numero1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Digite o segundo numero: ");
-            int numero2 = Convert.ToInt32(Console.ReadLine());
-            int multiplicacao = numero1 * numero2;
-            Console.WriteLine($"A multiplicacao dos numeros {numero1} e {numero2} é {multiplicacao}.");
-        }
+/* 3. Questão: Solicite ao usuário para inserir dois números inteiros e calcule a
+   multiplicação desses números. Exiba o resultado com uma mensagem que informe a
+   multiplicação. */
+/*public static void Exercicio3()
+{
+    Console.Write("Digite o primeiro numero: ");
+    int numero1 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Digite o segundo numero: ");
+    int numero2 = Convert.ToInt32(Console.ReadLine());
+    int multiplicacao = numero1 * numero2;
+    Console.WriteLine($"A multiplicacao dos numeros {numero1} e {numero2} é {multiplicacao}.");
+}
 
-        /* 4. Questão: Peça ao usuário para inserir dois números inteiros e calcule a divisão do
-           primeiro número pelo segundo. Exiba o resultado com uma mensagem que informe a
-           divisão. Inclua tratamento para divisão por zero. */
-        public static void Exercicio4()
+/* 4. Questão: Peça ao usuário para inserir dois números inteiros e calcule a divisão do
+   primeiro número pelo segundo. Exiba o resultado com uma mensagem que informe a
+   divisão. Inclua tratamento para divisão por zero. */
+/*public static void Exercicio4()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -67,7 +67,7 @@ namespace CursoCSharp.Exercicios
         /* 5. Questão: Solicite ao usuário para inserir dois números inteiros e calcule o resto da
            divisão do primeiro número pelo segundo. Exiba o resultado com uma mensagem que
            informe o resto da divisão. */
-        public static void Exercicio5()
+/*public static void Exercicio5()
         {
             // Solicita o primeiro número ao usuário
             Console.Write("Digite o primeiro número inteiro: ");
@@ -94,7 +94,7 @@ namespace CursoCSharp.Exercicios
 
         /* 6. Questão: Peça ao usuário para inserir um número inteiro e, em seguida, exiba o
               número incrementado em 1. Utilize o operador de incremento ++. */
-        public static void Exercicio6()
+/*public static void Exercicio6()
         {
             Console.Write("Digite um numero inteiro: ");
             int numero = Convert.ToInt32(Console.ReadLine());
@@ -105,7 +105,7 @@ namespace CursoCSharp.Exercicios
 
         /* 7. Questão: Solicite ao usuário para inserir um número inteiro e exiba o mesmo número
               decrementado em 1. Utilize o operador de decremento --. */
-        public static void Exercicio7()
+/*public static void Exercicio7()
         {
             Console.Write("Digite um numero inteiro: ");
             int numero = Convert.ToInt32(Console.ReadLine());
@@ -115,7 +115,7 @@ namespace CursoCSharp.Exercicios
 
         /* 8. Questão: Crie um programa que solicite ao usuário para inserir dois números inteiros e
               calcule a média desses números. Exiba a média com uma mensagem informativa. */
-        public static void Exercicio8()
+/*public static void Exercicio8()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -128,7 +128,7 @@ namespace CursoCSharp.Exercicios
         /* 9. Questão: Peça ao usuário para inserir três números inteiros e calcule a soma dos dois
               primeiros números e, em seguida, subtraia o terceiro número do resultado. Exiba o
               resultado com uma mensagem explicativa. */
-        public static void Exercicio9()
+/*public static void Exercicio9()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -143,7 +143,7 @@ namespace CursoCSharp.Exercicios
 
         /* 10. Questão: Solicite ao usuário dois números inteiros e calcule o quadrado do primeiro
                número somado ao segundo número. Exiba o resultado com uma mensagem explicativa. */
-        public static void Exercicio10()
+/*public static void Exercicio10()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -155,7 +155,7 @@ namespace CursoCSharp.Exercicios
 
         /* 11. Questão: Crie um programa que solicite ao usuário para inserir um valor e exiba o
                dobro desse valor e a metade desse valor. Utilize operadores aritméticos para fazer os cálculos. */
-        public static void Exercicio11()
+/*public static void Exercicio11()
         {
             Console.Write("Digite um numero: ");
             int numero = Convert.ToInt32(Console.ReadLine());
@@ -166,7 +166,7 @@ namespace CursoCSharp.Exercicios
 
         /* 12. Questão: Peça ao usuário para inserir dois números inteiros e calcule o resultado da
                expressão (a + b) * (a - b). Exiba o resultado com uma mensagem informativa. */
-        public static void Exercicio12()
+/*public static void Exercicio12()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -178,7 +178,7 @@ namespace CursoCSharp.Exercicios
 
         /* 13. Questão: Solicite ao usuário para inserir dois números inteiros e calcule a soma do
                quadrado do primeiro número com o quadrado do segundo número. Exiba o resultado com uma mensagem explicativa. */
-        public static void Exercicio13()
+/*public static void Exercicio13()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -190,7 +190,7 @@ namespace CursoCSharp.Exercicios
 
         /* 14. Questão: Crie um programa que solicite ao usuário para inserir um número inteiro e
                calcule o valor do número ao cubo. Exiba o resultado com uma mensagem explicativa. */
-        public static void Exercicio14()
+/*public static void Exercicio14()
         {
             Console.Write("Digite um numero: ");
             int numero = Convert.ToInt32(Console.ReadLine());
@@ -200,7 +200,7 @@ namespace CursoCSharp.Exercicios
 
         /* 15. Questão: Peça ao usuário para inserir dois números inteiros e calcule o resultado da
                expressão a * (b + a) / b. Exiba o resultado com uma mensagem informativa. */
-        public static void Exercicio15()
+/*public static void Exercicio15()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -212,7 +212,7 @@ namespace CursoCSharp.Exercicios
 
         /* 16. Questão: Solicite ao usuário para inserir um número inteiro e calcule o quadrado da
                 diferença entre o número e 5. Exiba o resultado com uma mensagem explicativa. */
-        public static void Exercicio16()
+/*public static void Exercicio16()
         {
             Console.Write("Digite um número: ");
             int numero = Convert.ToInt32(Console.ReadLine());
@@ -223,7 +223,7 @@ namespace CursoCSharp.Exercicios
 
         /* 17. Questão: Crie um programa que solicite ao usuário dois números inteiros e calcule a
                média aritmética entre eles. Exiba a média com uma mensagem explicativa. */
-        public static void Exercicio17()
+/*public static void Exercicio17()
         {
             Console.Write("Digite o primeiro numero: ");
             int numero1 = Convert.ToInt32(Console.ReadLine());
@@ -235,7 +235,7 @@ namespace CursoCSharp.Exercicios
 
         /* 18. Questão: Peça ao usuário para inserir um valor em reais e calcule o valor em dólares,
                assumindo uma taxa de câmbio fixa de 5.0 reais por dólar. Exiba o resultado com uma mensagem explicativa. */
-        public static void Exercicio18()
+/*public static void Exercicio18()
         {
             Console.Write("Digite o valor em reais: R$ ");
             double valorEmReais = Convert.ToDouble(Console.ReadLine());
@@ -245,7 +245,7 @@ namespace CursoCSharp.Exercicios
 
         /* 19. Questão: Solicite ao usuário para inserir a quantidade de dias e calcule a quantidade total de horas.
                Exiba o resultado com uma mensagem explicativa. */
-        public static void Exercicio19()
+/*public static void Exercicio19()
         {
             // Solicita ao usuário para inserir a quantidade de dias
             Console.Write("Digite a quantidade de dias: ");
@@ -272,7 +272,7 @@ namespace CursoCSharp.Exercicios
 
         /* 20. Questão: Crie um programa que peça ao usuário para inserir a quantidade de horas e
                minutos e calcule o total em minutos. Exiba o resultado com uma mensagem explicativa. */
-        public static void Exercicio20()
+/*public static void Exercicio20()
         {
             Console.Write("Digite a quantidade de horas: ");
             int horas = int.Parse(Console.ReadLine());
@@ -284,4 +284,4 @@ namespace CursoCSharp.Exercicios
         }
 
     }
-}
+}*/
