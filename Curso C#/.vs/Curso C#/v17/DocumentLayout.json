@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\operadoresatribuicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:operadoresatribuicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\11-array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:11-array.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\10-estruturarepeticao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:10-estruturarepeticao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\08-conversao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:08-conversao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\09-estruturacondicional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:09-estruturacondicional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\07-operadorternario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:07-operadorternario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\06-operadorescomparacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:06-operadorescomparacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\operadoreslogico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:operadoreslogico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\curso c#.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -35,32 +51,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OperadoresAtribuicao.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\OperadoresAtribuicao.cs",
-              "RelativeDocumentMoniker": "OperadoresAtribuicao.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\OperadoresAtribuicao.cs",
-              "RelativeToolTip": "OperadoresAtribuicao.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAiwBoAAAAqAAAA",
+              "Title": "11-Array.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\11-Array.cs",
+              "RelativeDocumentMoniker": "11-Array.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\11-Array.cs",
+              "RelativeToolTip": "11-Array.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAQwEgAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T19:50:02.056Z",
+              "WhenOpened": "2024-08-08T20:00:25.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OperadoresLogico.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\OperadoresLogico.cs",
-              "RelativeDocumentMoniker": "OperadoresLogico.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\OperadoresLogico.cs",
-              "RelativeToolTip": "OperadoresLogico.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "10-EstruturaRepeticao.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\10-EstruturaRepeticao.cs",
+              "RelativeDocumentMoniker": "10-EstruturaRepeticao.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\10-EstruturaRepeticao.cs",
+              "RelativeToolTip": "10-EstruturaRepeticao.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB0AAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T18:23:05.684Z",
+              "WhenOpened": "2024-08-08T19:24:40.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "09-EstruturaCondicional.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\09-EstruturaCondicional.cs",
+              "RelativeDocumentMoniker": "09-EstruturaCondicional.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\09-EstruturaCondicional.cs",
+              "RelativeToolTip": "09-EstruturaCondicional.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwDQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T18:50:40.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "08-conversao.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\08-conversao.cs",
+              "RelativeDocumentMoniker": "08-conversao.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\08-conversao.cs",
+              "RelativeToolTip": "08-conversao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T18:19:09.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "07-OperadorTernario.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\07-OperadorTernario.cs",
+              "RelativeDocumentMoniker": "07-OperadorTernario.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\07-OperadorTernario.cs",
+              "RelativeToolTip": "07-OperadorTernario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T17:44:46.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "06-OperadoresComparacao.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\06-OperadoresComparacao.cs",
+              "RelativeDocumentMoniker": "06-OperadoresComparacao.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\06-OperadoresComparacao.cs",
+              "RelativeToolTip": "06-OperadoresComparacao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T17:18:41.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Curso C#.csproj",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Curso C#.csproj",
               "RelativeDocumentMoniker": "Curso C#.csproj",
@@ -72,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -80,8 +148,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAAAD8AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T18:48:27.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T18:48:27.876Z"
             }
           ]
         }
