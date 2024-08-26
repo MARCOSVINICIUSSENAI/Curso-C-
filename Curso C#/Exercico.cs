@@ -1,334 +1,165 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-/* namespace Curso_C_
+namespace Curso_C_
 {
-    public class ExercicoTipoPrimitivo
-    {*/
-        //Modifique o método LerArmazenar para armazenar o sobrenome do usuário e
-        //exibi-lo junto com o nome:
 
-       /* public static void Exercicio01()
+    /* 1. Defina uma classe chamada Carro que tenha as seguintes propriedades: marca
+        (string), modelo (string) e ano (int). Crie um objeto dessa classe e inicialize suas
+        propriedades. */
+    public class Carro
+    {
+
+        public string? Marca;
+        public string? Modelo;
+        public int Ano;
+
+        /* 3. Adicione um método construtor na classe Carro que receba os parâmetros para
+            inicializar marca, modelo e ano. */
+
+        public Carro(string marca, string modelo, int ano)
         {
-            string? nome;
-            string? sobrenome;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-            Console.WriteLine("Digite o seu sobrenome:");
-            sobrenome = Console.ReadLine();
+            this.Marca = marca;
+            this.Modelo = modelo;
+            this.Ano = ano;
+        }
 
-            Console.WriteLine($"O nome e: {nome} {sobrenome}");
+        /* 2. Crie um método na classe Carro chamado ExibirDetalhes, que imprime no console os
+            detalhes do carro (marca, modelo e ano). */
+
+        public void ExibirInformacoes()
+        {
+            Console.WriteLine($"Marca: {Marca}, Modelo: {Modelo}, Ano: {Ano}");
+        }
+    }
+
+    /* 4. Defina uma classe chamada Pessoa com as propriedades nome (string), idade (int) e
+        cidade (string). Crie um objeto dessa classe e inicialize suas propriedades. */
+
+    public class PessoaNova
+    {
+        public string? Nome;
+        public int Idade;
+        public string? Cidade;
+
+        /*  5. Implemente um método na classe Pessoa chamado ExibirInformacoes, que imprime
+         no console as informações da pessoa (nome, idade e cidade). */
+        public void ExibirInformacoes()
+        {
+            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}, Cidade: {Cidade}");
+        }
+
+    }
+
+    /* 6. Declare uma variável do tipo int chamada idade e atribua a ela o valor 25. Em seguida,
+    declare uma variável do tipo string chamada nome e atribua a ela o seu nome.
+    Imprima ambos os valores no console. */
+
+    public class Variavel
+    {
+
+        public int idade = 25;
+        public string? nome = "Arthur";
+        public void ExibirInformacoes()
+        {
+            Console.WriteLine($"Nome: {nome}, Idade: {idade}");
+        }
+
+        /* 7. Crie um método que receba dois parâmetros do tipo int e retorne a soma desses
+        números. Chame esse método em Main e exiba o resultado. */
+
+        public void Soma(int numero1, int numero2)
+        {
+            int somaNum = numero1 + numero2;
+            Console.WriteLine($"O Resultado da soma foi {somaNum}");
         }
 
 
 
-        //Peça ao usuário para inserir a idade e exiba o nome e a idade:
+        /* 8. Declare uma variável do tipo bool chamada estaChovendo e atribua a ela o valor false.
+        Escreva uma estrutura condicional que exiba &quot;Está chovendo&quot; ou &quot;Não está chovendo&quot;
+        com base no valor da variável.*/
 
-        public static void Exercicio02()
+        public bool MostrarBoleano()
         {
-            string? nome;
-            int idade;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-            Console.WriteLine("Digite a sua idade:");
-            idade = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine($"O nome e: {nome} {idade}");
-        }
-
-        //Peça ao usuário para inserir a cidade e exiba o nome e a cidade:
-
-        public static void Exercicio03()
-        {
-            string? nome;
-            string? cidade;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-            Console.WriteLine("Digite a sua cidade:");
-            cidade = Console.ReadLine();
-
-            Console.WriteLine($"O nome e: {nome} {cidade}");
+            bool estaChovendo = false;
+            if (estaChovendo == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
 
-        //Armazene o nome do usuário em maiúsculas e exiba-o:
+        /*9. Implemente um método chamado VerificarMaioridade que recebe uma idade como
+    parâmetro e retorna true se a idade for maior ou igual a 18, e false caso contrário.
+    Teste esse método no método Main.*/
 
-        public static void Exercicio04()
+        public bool VerificarMaiorIdade(int idade)
         {
-            string? nome;
-            string? cidade;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine().ToUpper();
-            Console.WriteLine("Digite a sua cidade:");
-            cidade = Console.ReadLine();
-
-            Console.WriteLine($"O nome e: {nome} {cidade}");
-        }
-
-        //Armazene o nome do usuário em minúsculas e exiba-o:
-
-        public static void Exercicio05()
-        {
-            string? nome;
-            string? cidade;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine().ToLower();
-            Console.WriteLine("Digite a sua cidade:");
-            cidade = Console.ReadLine();
-
-            Console.WriteLine($"O nome e: {nome} {cidade}");
+            if (idade <= 18)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
 
-        // Peça ao usuário para inserir seu nome e idade, depois exiba ambos em uma única linha:
+        /* 10. Declare uma variável do tipo double chamada altura e atribua a ela o valor 1.75.
+    Imprima o valor no console formatado para duas casas decimais.*/
 
-        public static void Exercicio06()
+        public void ExibirAltura()
         {
-            string? nome;
-            int idade;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-            Console.WriteLine("Digite a sua idade:");
-            idade = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine($"O nome e: {nome} e a idade e: {idade}");
+            double altura = 1.75;
+            Console.WriteLine($"A altura e {altura: F2}");
         }
 
 
-        // Peça ao usuário para inserir seu nome e cidade de nascimento, depois exiba ambos:
+        /* 11. Crie um método CalcularArea que calcule a área de um círculo recebendo o raio como
+    parâmetro e retorne o resultado.Use a fórmula Área = π * raio ^ 2.*/
 
-        public static void Exercicio07()
+
+        public double Calculararea(double raio)
         {
-            string? nome;
-            string? cidade;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-            Console.WriteLine("Digite a sua cidade de nascimento:");
-            cidade = Console.ReadLine();
+            return (raio * raio) * 3.14;
 
-
-            Console.WriteLine($"O nome é: {nome} sua cidade de nascimento é: {cidade}");
         }
-
-        // Peça ao usuário para inserir seu nome e profissão, depois exiba ambos:
-
-        public static void Exercicio08()
+        public double CalcularArea(double l, double h)
         {
-            string? nome;
-            string? profissão;
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-            Console.WriteLine("Digite a sua profissão:");
-            profissão = Console.ReadLine();
-
-
-            Console.WriteLine($"O nome é: {nome} sua profissão é: {profissão}");
+            return (l + h);
         }
-
-
-        // Peça ao usuário para inserir seu nome e país de origem, depois exiba ambos:
-
-        public static void Exercicio09()
-        {
-            string? nome;
-            string? paisDeOrigem;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu país de origem:");
-            paisDeOrigem = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O país de origem é: {paisDeOrigem}.");
-        }
-
-        // Peça ao usuário para inserir seu nome e número favorito, depois exiba ambos:
-
-        public static void Exercicio10()
-        {
-            string? nome;
-            string? numeroFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu número favorito:");
-            numeroFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O número favorito é: {numeroFavorito}.");
-        }
-
-
-        // Peça ao usuário para inserir seu nome e hobby favorito, depois exiba ambos:
-
-        public static void Exercicio11()
-        {
-            string? nome;
-            string? hobbyFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu hobby favorito:");
-            hobbyFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O hobby favorito é: {hobbyFavorito}.");
-        }
-
-        // Peça ao usuário para inserir seu nome e cor favorita, depois exiba ambos:
-
-        public static void Exercicio12()
-        {
-            string? nome;
-            string? corFavorita;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite a sua cor favorita:");
-            corFavorita = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. A cor favorita é: {corFavorita}.");
-        }
-
-        // Peça ao usuário para inserir seu nome e filme favorito, depois exiba ambos:
-
-        public static void Exercicio13()
-        {
-            string? nome;
-            string? filmeFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu filme favorito:");
-            filmeFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O filme favorito é: {filmeFavorito}.");
-        }
-
-
-        // Peça ao usuário para inserir seu nome e gênero musical favorito, depois exibi ambos:
-        public static void Exercicio14()
-        {
-            string? nome;
-            string? generoMusicalFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu gênero musical favorito:");
-            generoMusicalFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O gênero musical favorito é: {generoMusicalFavorito}.");
-        }
-
-
-        // Peça ao usuário para inserir seu nome e animal favorito, depois exiba ambos:
-
-        public static void Exercicio15()
-        {
-            string? nome;
-            string? animalFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu animal favorito:");
-            animalFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O animal favorito é: {animalFavorito}.");
-        }
-
-
-        // Peça ao usuário para inserir seu nome e esporte favorito, depois exiba ambos:
-
-        public static void Exercicio16()
-        {
-            string? nome;
-            string? esporteFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu esporte favorito:");
-            esporteFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O esporte favorito é: {esporteFavorito}.");
-        }
-
-        // Peça ao usuário para inserir seu nome e comida favorita, depois exiba ambos:
-
-        public static void Exercicio17()
-        {
-            string? nome;
-            string? comidaFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu esporte favorito:");
-            comidaFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O esporte favorito é: {comidaFavorito}.");
-        }
-
-        // Peça ao usuário para inserir seu nome e banda favorita, depois exiba ambos:
-
-        public static void Exercicio18()
-        {
-            string? nome;
-            string? bandaFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu esporte favorito:");
-            bandaFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O esporte favorito é: {bandaFavorito}.");
-        }
-
-        // Peça ao usuário para inserir seu nome e livro favorito, depois exiba ambos:
-
-        public static void Exercicio19()
-        {
-            string? nome;
-            string? livroFavorito;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu esporte favorito:");
-            livroFavorito = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O esporte favorito é: {livroFavorito}.");
-        }
-
-
-        // Peça ao usuário para inserir seu nome e um lema de vida, depois exiba ambos:
-
-
-        public static void Exercicio20()
-        {
-            string? nome;
-            string? lemadevida;
-
-            Console.WriteLine("Digite o seu nome:");
-            nome = Console.ReadLine();
-
-            Console.WriteLine("Digite o seu esporte favorito:");
-            lemadevida = Console.ReadLine();
-
-            Console.WriteLine($"O nome é: {nome}. O esporte favorito é: {lemadevida}.");
-        }
-
 
 
     }
-}*/
+
+
+    /*12. Sobrecarga de métodos: Crie uma sobrecarga do método CalcularArea para calcular a
+    área de um retângulo, recebendo a largura e a altura como parâmetros.*/
+    public class Calculadora
+    {
+        public double Multiplicar(double n1, double n2)
+        {
+            return n1 * n2;
+        }
+
+        public double Multiplicar(double n1, double n2, double n3)
+        {
+            return (n1 * n2 * n3);
+        }
+
+    }
+}
