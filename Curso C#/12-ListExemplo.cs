@@ -73,7 +73,3 @@ namespace Curso_C_
         }
     }
 }
-
-Dontpad uses cookies and similar technologies to improve your experience and to show you more relevant ads, according to our cookie policy. By clicking 'Accept' you are indicating that you have read and that you accept our Cookie Policy, Privacy Policy and Content Policy.
-
-Accept

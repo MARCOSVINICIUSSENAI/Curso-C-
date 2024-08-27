@@ -22,8 +22,7 @@ namespace Curso_C_
         public string? Modelo;
         public int Ano;
 
-        /* 3. Adicione um método construtor na classe Carro que receba os parâmetros para
-            inicializar marca, modelo e ano. */
+       
 
         public Carro(string marca, string modelo, int ano)
         {
@@ -32,8 +31,7 @@ namespace Curso_C_
             this.Ano = ano;
         }
 
-        /* 2. Crie um método na classe Carro chamado ExibirDetalhes, que imprime no console os
-            detalhes do carro (marca, modelo e ano). */
+       
 
         public void ExibirInformacoes()
         {
