@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
@@ -11,153 +13,99 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Curso_C_
 {
+    /* Declaração de Variáveis com var:
+  Exercício: Declare uma variável de cada um dos seguintes tipos usando var e
+ atribua a elas valores apropriados.Depois, exiba o tipo da variável usando
+ GetType() para confirmar a inferência do tipo.*/
 
-    /* 1. Defina uma classe chamada Carro que tenha as seguintes propriedades: marca
-        (string), modelo (string) e ano (int). Crie um objeto dessa classe e inicialize suas
-        propriedades. */
-    public class Carro
+    class Program
     {
-
-        public string? Marca;
-        public string? Modelo;
-        public int Ano;
-
-       
-
-        public Carro(string marca, string modelo, int ano)
+        static void Main()
         {
-            this.Marca = marca;
-            this.Modelo = modelo;
-            this.Ano = ano;
-        }
+            // Declaração de variáveis usando var
+            var inteiro = 100;
+            var flutuante = 10.5f;
+            var duplo = 20.99;
+            var texto = "Exemplo de string";
+            var caractere = 'C';
+            var booleano = false;
+            var decimalPrecisao = 1000.99m;
 
-       
-
-        public void ExibirInformacoes()
-        {
-            Console.WriteLine($"Marca: {Marca}, Modelo: {Modelo}, Ano: {Ano}");
-        }
-    }
-
-    /* 4. Defina uma classe chamada Pessoa com as propriedades nome (string), idade (int) e
-        cidade (string). Crie um objeto dessa classe e inicialize suas propriedades. */
-
-    public class PessoaNova
-    {
-        public string? Nome;
-        public int Idade;
-        public string? Cidade;
-
-        /*  5. Implemente um método na classe Pessoa chamado ExibirInformacoes, que imprime
-         no console as informações da pessoa (nome, idade e cidade). */
-        public void ExibirInformacoes()
-        {
-            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}, Cidade: {Cidade}");
-        }
-
-    }
-
-    /* 6. Declare uma variável do tipo int chamada idade e atribua a ela o valor 25. Em seguida,
-    declare uma variável do tipo string chamada nome e atribua a ela o seu nome.
-    Imprima ambos os valores no console. */
-
-    public class Variavel
-    {
-
-        public int idade = 25;
-        public string? nome = "Arthur";
-        public void ExibirInformacoes()
-        {
-            Console.WriteLine($"Nome: {nome}, Idade: {idade}");
-        }
-
-        /* 7. Crie um método que receba dois parâmetros do tipo int e retorne a soma desses
-        números. Chame esse método em Main e exiba o resultado. */
-
-        public void Soma(int numero1, int numero2)
-        {
-            int somaNum = numero1 + numero2;
-            Console.WriteLine($"O Resultado da soma foi {somaNum}");
+            // Exibição dos tipos usando GetType()
+            Console.WriteLine($"Tipo da variável 'inteiro': {inteiro.GetType()}");
+            Console.WriteLine($"Tipo da variável 'flutuante': {flutuante.GetType()}");
+            Console.WriteLine($"Tipo da variável 'duplo': {duplo.GetType()}");
+            Console.WriteLine($"Tipo da variável 'texto': {texto.GetType()}");
+            Console.WriteLine($"Tipo da variável 'caractere': {caractere.GetType()}");
+            Console.WriteLine($"Tipo da variável 'booleano': {booleano.GetType()}");
+            Console.WriteLine($"Tipo da variável 'decimalPrecisao': {decimalPrecisao.GetType()}");
         }
 
 
-
-        /* 8. Declare uma variável do tipo bool chamada estaChovendo e atribua a ela o valor false.
-        Escreva uma estrutura condicional que exiba &quot;Está chovendo&quot; ou &quot;Não está chovendo&quot;
-        com base no valor da variável.*/
-
-        public bool MostrarBoleano()
+        /*Utilizando var em Métodos de LINQ:
+       Exercício: Crie uma lista de inteiros e use um método LINQ para ordenar a lista
+      em ordem crescente.Declare a variável que armazena o resultado usando var.*/
+        static void Main()
         {
-            bool estaChovendo = false;
-            if (estaChovendo == true)
+            // Criação de uma lista de inteiros
+            List<int> numeros = new List<int> { 5, 3, 8, 1, 4, 7, 6, 2 };
+
+            // Ordenando a lista em ordem crescente usando LINQ e armazenando o resultado em uma variável var
+            var numerosOrdenados = numeros.OrderBy(num => num);
+
+            // Exibindo os números ordenados
+            Console.WriteLine("Números ordenados em ordem crescente:");
+            foreach (var numero in numerosOrdenados)
             {
-                return true;
-            }
-            else
-            {
-                return false;
+                Console.WriteLine(numero);
             }
         }
 
 
-        /*9. Implemente um método chamado VerificarMaioridade que recebe uma idade como
-    parâmetro e retorna true se a idade for maior ou igual a 18, e false caso contrário.
-    Teste esse método no método Main.*/
+        /*Declaração de Variáveis com Tipos Complexos:
+         Exercício: Declare uma variável var para um tipo complexo, como um
+        Dictionary ou uma instância de uma classe personalizada.Mostre como a
+        inferência de tipo funciona com tipos mais complexos.*/
 
-        public bool VerificarMaiorIdade(int idade)
+        static void Main()
         {
-            if (idade <= 18)
+            // Declaração de um Dictionary usando var
+            var idadesPorNome = new Dictionary<string, int>
             {
-                return true;
-            }
-            else
+              { "Ana", 30 },
+              { "Carlos", 25 },
+              { "Beatriz", 28 }
+            };
+
+            // Exibindo o tipo da variável usando GetType()
+            Console.WriteLine($"Tipo da variável 'idadesPorNome': {idadesPorNome.GetType()}");
+
+            // Iterando e exibindo o conteúdo do Dictionary
+            foreach (var item in idadesPorNome)
             {
-                return false;
+                Console.WriteLine($"{item.Key} tem {item.Value} anos.");
             }
         }
 
 
-        /* 10. Declare uma variável do tipo double chamada altura e atribua a ela o valor 1.75.
-    Imprima o valor no console formatado para duas casas decimais.*/
+        /* Trabalhando com Tipos Anônimos:
+         Exercício: Crie um tipo anônimo usando var para armazenar informações de
+        uma pessoa(nome e idade) e exiba essas informações.*/
 
-        public void ExibirAltura()
+        static void Main()
         {
-            double altura = 1.75;
-            Console.WriteLine($"A altura e {altura: F2}");
+            // Criação de um tipo anônimo usando var
+            var pessoa = new
+            {
+                Nome = "Maria",
+                Idade = 35
+            };
+
+            // Exibindo as informações do tipo anônimo
+            Console.WriteLine($"Nome: {pessoa.Nome}");
+            Console.WriteLine($"Idade: {pessoa.Idade}");
         }
-
-
-        /* 11. Crie um método CalcularArea que calcule a área de um círculo recebendo o raio como
-    parâmetro e retorne o resultado.Use a fórmula Área = π * raio ^ 2.*/
-
-
-        public double Calculararea(double raio)
-        {
-            return (raio * raio) * 3.14;
-
-        }
-        public double CalcularArea(double l, double h)
-        {
-            return (l + h);
-        }
-
 
     }
 
-
-    /*12. Sobrecarga de métodos: Crie uma sobrecarga do método CalcularArea para calcular a
-    área de um retângulo, recebendo a largura e a altura como parâmetros.*/
-    public class Calculadora
-    {
-        public double Multiplicar(double n1, double n2)
-        {
-            return n1 * n2;
-        }
-
-        public double Multiplicar(double n1, double n2, double n3)
-        {
-            return (n1 * n2 * n3);
-        }
-
-    }
 }

@@ -28,7 +28,7 @@ namespace Curso_C_
             foreach (var pessoa in pessoasComIdadeAcimaDe30)
             {
                 Console.WriteLine($"{pessoa.Nome}, {pessoa.Idade} anos");
-            }
+            } 
 
             // Exemplo 2: Consulta LINQ com Sintaxe de Método
             var pessoasComIdadeAcimaDe30Metodo = pessoas.Where(p => p.Idade > 30);
