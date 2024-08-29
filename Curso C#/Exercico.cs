@@ -1,111 +1,85 @@
-﻿using System;
-using System.Collections;
+﻿using CursoCSharp;
+using CursoCSharp.Guia;
+using CursoleoC_;
+using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
-using System.Net;
-using System.Runtime.ConstrainedExecution;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Curso_C_
+namespace CursoleoC_
 {
-    /* Declaração de Variáveis com var:
-  Exercício: Declare uma variável de cada um dos seguintes tipos usando var e
- atribua a elas valores apropriados.Depois, exiba o tipo da variável usando
- GetType() para confirmar a inferência do tipo.*/
+    /* 1. Crie uma consulta LINQ para encontrar todos os nomes das pessoas que têm o nome
+    começando com a letra &#39;A&#39; e que têm mais de 25 anos.*/
 
-    class Program
+    public class Exercicio1
     {
-        static void Main()
+        public void ExibirConsulta()
         {
-            // Declaração de variáveis usando var
-            var inteiro = 100;
-            var flutuante = 10.5f;
-            var duplo = 20.99;
-            var texto = "Exemplo de string";
-            var caractere = 'C';
-            var booleano = false;
-            var decimalPrecisao = 1000.99m;
-
-            // Exibição dos tipos usando GetType()
-            Console.WriteLine($"Tipo da variável 'inteiro': {inteiro.GetType()}");
-            Console.WriteLine($"Tipo da variável 'flutuante': {flutuante.GetType()}");
-            Console.WriteLine($"Tipo da variável 'duplo': {duplo.GetType()}");
-            Console.WriteLine($"Tipo da variável 'texto': {texto.GetType()}");
-            Console.WriteLine($"Tipo da variável 'caractere': {caractere.GetType()}");
-            Console.WriteLine($"Tipo da variável 'booleano': {booleano.GetType()}");
-            Console.WriteLine($"Tipo da variável 'decimalPrecisao': {decimalPrecisao.GetType()}");
-        }
-
-
-        /*Utilizando var em Métodos de LINQ:
-       Exercício: Crie uma lista de inteiros e use um método LINQ para ordenar a lista
-      em ordem crescente.Declare a variável que armazena o resultado usando var.*/
-        static void Main()
+            var pessoas = new List<PessoasLinq>
         {
-            // Criação de uma lista de inteiros
-            List<int> numeros = new List<int> { 5, 3, 8, 1, 4, 7, 6, 2 };
+         new PessoasLinq{nome = "Rodrigo", idade = 20},
+         new PessoasLinq{nome = "Arthur", idade = 30},
+         new PessoasLinq{nome = "Marcos", idade = 30},
+         new PessoasLinq{nome = "Thiago", idade = 50},
+         new PessoasLinq{nome = "Lia", idade = 15},
+         new PessoasLinq{nome = "zeze", idade = 20},
+         new PessoasLinq{nome = "suh", idade = 16},
+         new PessoasLinq{nome = "Ruan", idade = 25},
+         new PessoasLinq{nome = "Leo", idade = 20},
+         new PessoasLinq{nome = "Abigail", idade = 60},
+         new PessoasLinq{nome = "Davi", idade = 65},
+        };
+            var pessoasInicioAmomeMaiorque25 = pessoas.Where(p => p.nome.StartsWith("A") && p.idade > 25);
 
-            // Ordenando a lista em ordem crescente usando LINQ e armazenando o resultado em uma variável var
-            var numerosOrdenados = numeros.OrderBy(num => num);
-
-            // Exibindo os números ordenados
-            Console.WriteLine("Números ordenados em ordem crescente:");
-            foreach (var numero in numerosOrdenados)
+            foreach (var pessoa in pessoasInicioAmomeMaiorque25)
             {
-                Console.WriteLine(numero);
+                Console.WriteLine($"o nome da pessoa é:{pessoa.nome}, e a idade da pessoa é:{pessoa.idade}");
+
             }
         }
-
-
-        /*Declaração de Variáveis com Tipos Complexos:
-         Exercício: Declare uma variável var para um tipo complexo, como um
-        Dictionary ou uma instância de uma classe personalizada.Mostre como a
-        inferência de tipo funciona com tipos mais complexos.*/
-
-        static void Main()
+    }
+    public class PessoasLinq
+    {
+        public string? nome;
+        public int? idade;
+    }
+    /*2.Adicione uma lista de produtos com propriedades Nome e Preço. Faça uma consulta
+        LINQ para encontrar os produtos cujo preço é superior à média de todos os produtos.*/
+    public class Produtos
+    {
+        public string? nome;
+        public double? preco;
+    }
+    public class Exercicio2
+    {
+        public void Leo()
         {
-            // Declaração de um Dictionary usando var
-            var idadesPorNome = new Dictionary<string, int>
+            var Produtos = new List<Produtos>
             {
-              { "Ana", 30 },
-              { "Carlos", 25 },
-              { "Beatriz", 28 }
+             new Produtos{nome = "Arroz", preco = 20.0},
+             new Produtos{nome = "Cafe", preco = 20.0},
+             new Produtos{nome = "Feijao", preco = 20.0},
+             new Produtos{nome = "Macarrao", preco = 20.0},
+             new Produtos{nome = "Biscoite", preco = 20.0},
+             new Produtos{nome = "Arroz", preco = 20.0},
+             new Produtos{nome = "Arroz", preco = 20.0},
+             new Produtos{nome = "Arroz", preco = 20.0},
+             new Produtos{nome = "Arroz", preco = 20.0},
             };
+            var precoMedia = Produtos.Average(p => p.preco);
+            var precoSuperiorMedia = Produtos.Where(p => p.preco > precoMedia);
 
-            // Exibindo o tipo da variável usando GetType()
-            Console.WriteLine($"Tipo da variável 'idadesPorNome': {idadesPorNome.GetType()}");
-
-            // Iterando e exibindo o conteúdo do Dictionary
-            foreach (var item in idadesPorNome)
+            foreach (var produto in precoSuperiorMedia)
             {
-                Console.WriteLine($"{item.Key} tem {item.Value} anos.");
+                Console.WriteLine(produto.nome, produto.preco);
+
             }
-        }
 
-
-        /* Trabalhando com Tipos Anônimos:
-         Exercício: Crie um tipo anônimo usando var para armazenar informações de
-        uma pessoa(nome e idade) e exiba essas informações.*/
-
-        static void Main()
-        {
-            // Criação de um tipo anônimo usando var
-            var pessoa = new
-            {
-                Nome = "Maria",
-                Idade = 35
-            };
-
-            // Exibindo as informações do tipo anônimo
-            Console.WriteLine($"Nome: {pessoa.Nome}");
-            Console.WriteLine($"Idade: {pessoa.Idade}");
         }
 
     }
 
 }
+
