@@ -1,85 +1,91 @@
-﻿using CursoCSharp;
-using CursoCSharp.Guia;
-using CursoleoC_;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Intrinsics.X86;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Intrinsics.X86;
 
-namespace CursoleoC_
+1.Crie uma consulta LINQ para encontrar todos os nomes das pessoas que têm o nome começando com a letra 'A' e que têm mais de 25 anos.
+csharp
+Copiar código
+var nomesComA = pessoas
+    .Where(p => p.Nome.StartsWith("A") && p.Idade > 25)
+    .Select(p => p.Nome);
+
+Console.WriteLine("Nomes que começam com 'A' e têm mais de 25 anos:");
+foreach (var nome in nomesComA)
 {
-    /* 1. Crie uma consulta LINQ para encontrar todos os nomes das pessoas que têm o nome
-    começando com a letra &#39;A&#39; e que têm mais de 25 anos.*/
+    Console.WriteLine(nome);
+}
+2.Adicione uma lista de produtos com propriedades Nome e Preço. Faça uma consulta LINQ para encontrar os produtos cujo preço é superior à média de todos os produtos.
+csharp
+Copiar código
+public class Produto
+{
+    public string Nome { get; set; }
+    public decimal Preço { get; set; }
+}
 
-    public class Exercicio1
-    {
-        public void ExibirConsulta()
-        {
-            var pessoas = new List<PessoasLinq>
-        {
-         new PessoasLinq{nome = "Rodrigo", idade = 20},
-         new PessoasLinq{nome = "Arthur", idade = 30},
-         new PessoasLinq{nome = "Marcos", idade = 30},
-         new PessoasLinq{nome = "Thiago", idade = 50},
-         new PessoasLinq{nome = "Lia", idade = 15},
-         new PessoasLinq{nome = "zeze", idade = 20},
-         new PessoasLinq{nome = "suh", idade = 16},
-         new PessoasLinq{nome = "Ruan", idade = 25},
-         new PessoasLinq{nome = "Leo", idade = 20},
-         new PessoasLinq{nome = "Abigail", idade = 60},
-         new PessoasLinq{nome = "Davi", idade = 65},
-        };
-            var pessoasInicioAmomeMaiorque25 = pessoas.Where(p => p.nome.StartsWith("A") && p.idade > 25);
+var produtos = new List<Produto>
+{
+    new Produto { Nome = "Produto A", Preço = 50 },
+    new Produto { Nome = "Produto B", Preço = 150 },
+    new Produto { Nome = "Produto C", Preço = 200 },
+    new Produto { Nome = "Produto D", Preço = 80 }
+};
 
-            foreach (var pessoa in pessoasInicioAmomeMaiorque25)
-            {
-                Console.WriteLine($"o nome da pessoa é:{pessoa.nome}, e a idade da pessoa é:{pessoa.idade}");
+var precoMedio = produtos.Average(p => p.Preço);
+var produtosAcimaDaMedia = produtos.Where(p => p.Preço > precoMedio);
 
-            }
-        }
-    }
-    public class PessoasLinq
-    {
-        public string? nome;
-        public int? idade;
-    }
-    /*2.Adicione uma lista de produtos com propriedades Nome e Preço. Faça uma consulta
-        LINQ para encontrar os produtos cujo preço é superior à média de todos os produtos.*/
-    public class Produtos
-    {
-        public string? nome;
-        public double? preco;
-    }
-    public class Exercicio2
-    {
-        public void Leo()
-        {
-            var Produtos = new List<Produtos>
-            {
-             new Produtos{nome = "Arroz", preco = 20.0},
-             new Produtos{nome = "Cafe", preco = 20.0},
-             new Produtos{nome = "Feijao", preco = 20.0},
-             new Produtos{nome = "Macarrao", preco = 20.0},
-             new Produtos{nome = "Biscoite", preco = 20.0},
-             new Produtos{nome = "Arroz", preco = 20.0},
-             new Produtos{nome = "Arroz", preco = 20.0},
-             new Produtos{nome = "Arroz", preco = 20.0},
-             new Produtos{nome = "Arroz", preco = 20.0},
-            };
-            var precoMedia = Produtos.Average(p => p.preco);
-            var precoSuperiorMedia = Produtos.Where(p => p.preco > precoMedia);
+Console.WriteLine("Produtos com preço acima da média:");
+foreach (var produto in produtosAcimaDaMedia)
+{
+    Console.WriteLine($"{produto.Nome}, {produto.Preço}");
+}
+3.Utilizando a lista de pessoas, crie uma consulta LINQ para listar o nome das pessoas em ordem alfabética reversa.
+csharp
+Copiar código
+var pessoasOrdemReversa = pessoas
+    .OrderByDescending(p => p.Nome)
+    .Select(p => p.Nome);
 
-            foreach (var produto in precoSuperiorMedia)
-            {
-                Console.WriteLine(produto.nome, produto.preco);
+Console.WriteLine("Nomes das pessoas em ordem alfabética reversa:");
+foreach (var nome in pessoasOrdemReversa)
+{
+    Console.WriteLine(nome);
+}
+4.Crie uma consulta LINQ para encontrar a pessoa mais jovem de cada cidade.
+csharp
+Copiar código
+var pessoaMaisJovemPorCidade = pessoas
+    .GroupBy(p => p.Cidade)
+    .Select(grupo => grupo.OrderBy(p => p.Idade).First());
 
-            }
+Console.WriteLine("Pessoa mais jovem por cidade:");
+foreach (var pessoa in pessoaMaisJovemPorCidade)
+{
+    Console.WriteLine($"{pessoa.Nome} de {pessoa.Cidade} com {pessoa.Idade} anos");
+}
+5.Adicione uma lista de livros com propriedades Título, Autor e AnoPublicacao. Faça uma consulta LINQ para encontrar os livros publicados após o ano de 2000 e ordene-os por ano de publicação em ordem crescente.
+csharp
+Copiar código
+public class Livro
+{
+    public string Título { get; set; }
+    public string Autor { get; set; }
+    public int AnoPublicacao { get; set; }
+}
 
-        }
+var livros = new List<Livro>
+{
+    new Livro { Título = "Livro A", Autor = "Autor A", AnoPublicacao = 1995 },
+    new Livro { Título = "Livro B", Autor = "Autor B", AnoPublicacao = 2005 },
+    new Livro { Título = "Livro C", Autor = "Autor C", AnoPublicacao = 2010 },
+    new Livro { Título = "Livro D", Autor = "Autor D", AnoPublicacao = 2000 }
+};
 
-    }
+var livrosDepois2000 = livros
+    .Where(l => l.AnoPublicacao > 2000)
+    .OrderBy(l => l.AnoPublicacao);
 
+Console.WriteLine("Livros publicados após 2000, ordenados por ano:");
+foreach (var livro in livrosDepois2000)
+{
+    Console.WriteLine($"{livro.Título} por {livro.Autor} ({livro.AnoPublicacao})");
 }
 
