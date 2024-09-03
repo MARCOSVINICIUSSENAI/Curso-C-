@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*namespace Curso_C_
+namespace Curso_C_
 {
-    public static void _10_EstruturaRepeticao()
+    /*public static void _10_EstruturaRepeticao()
     {
         // 1 Estrutura de repeticao 'for'
         Console.WriteLine("Estrutura for:");
@@ -45,5 +45,5 @@ using System.Threading.Tasks;
             Console.WriteLine(fruta);
         }
 
-    }
-}*/
+    }*/
+}

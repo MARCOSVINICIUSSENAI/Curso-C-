@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Curso_C_
 {
-    public static void _11_Array()
+    /*public static void _11_Array()
     {
         // 1 declaracao e inicializacao de Arrays
         int[] numeros = new int[S]; // Array de inteiros com 5 elementos 
@@ -72,5 +72,5 @@ namespace Curso_C_
         Console.WriteLine($"elemento [0][1] do jaggedArray: {jaggedArray[0][1]}");
         Console.WriteLine($"elemento [2][3] do jaggedArray: {jaggedArray[2][3]}");
 
-    }
+    }*/
 }

@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\19-metodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:19-metodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\exercico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:exercico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\11-arrayexemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:11-arrayexemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\10-estruturarepeticao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:10-estruturarepeticao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\16-tipodynamic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:16-tipodynamic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\20-enumeracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:20-enumeracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\21-recus\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:21-recus\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\19-metodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:19-metodo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\18-tipolinq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,22 +51,6 @@
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:22-structs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\21-recus\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:21-recus\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\exercico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:exercico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\16-tipodynamic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:16-tipodynamic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\curso c#.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:curso c#.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -54,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +74,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "11-ArrayExemplo.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\11-ArrayExemplo.cs",
+              "RelativeDocumentMoniker": "11-ArrayExemplo.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\11-ArrayExemplo.cs",
+              "RelativeToolTip": "11-ArrayExemplo.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAQwEoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T19:45:49.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "10-EstruturaRepeticao.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\10-EstruturaRepeticao.cs",
+              "RelativeDocumentMoniker": "10-EstruturaRepeticao.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\10-EstruturaRepeticao.cs",
+              "RelativeToolTip": "10-EstruturaRepeticao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T19:45:15.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "24-Colecoes.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\24-Colecoes.cs",
               "RelativeDocumentMoniker": "24-Colecoes.cs",
@@ -74,12 +108,11 @@
               "RelativeToolTip": "24-Colecoes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T19:33:49.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T19:33:49.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "23-Nullable.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\23-Nullable.cs",
               "RelativeDocumentMoniker": "23-Nullable.cs",
@@ -87,12 +120,11 @@
               "RelativeToolTip": "23-Nullable.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T19:33:31.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T19:33:31.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "22-Structs.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\22-Structs.cs",
               "RelativeDocumentMoniker": "22-Structs.cs",
@@ -100,8 +132,7 @@
               "RelativeToolTip": "22-Structs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T19:32:43.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T19:32:43.061Z"
             },
             {
               "$type": "Document",
@@ -118,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "20-Enumeracoes.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\20-Enumeracoes.cs",
               "RelativeDocumentMoniker": "20-Enumeracoes.cs",
@@ -131,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "19-metodo.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\19-metodo.cs",
               "RelativeDocumentMoniker": "19-metodo.cs",
@@ -144,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "18-TipoLinq.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\18-TipoLinq.cs",
               "RelativeDocumentMoniker": "18-TipoLinq.cs",
@@ -152,37 +183,37 @@
               "RelativeToolTip": "18-TipoLinq.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:43:06.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T19:43:06.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "16-TipoDynamic.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\16-TipoDynamic.cs",
               "RelativeDocumentMoniker": "16-TipoDynamic.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\16-TipoDynamic.cs",
               "RelativeToolTip": "16-TipoDynamic.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T19:27:21.585Z"
+              "WhenOpened": "2024-08-27T19:27:21.585Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Exercico.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Exercico.cs",
               "RelativeDocumentMoniker": "Exercico.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Exercico.cs",
               "RelativeToolTip": "Exercico.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAuwFsAAAAAAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAswFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T17:37:45.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Curso C#.csproj",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Curso C#.csproj",
               "RelativeDocumentMoniker": "Curso C#.csproj",
@@ -194,15 +225,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T18:48:27.876Z"
+              "WhenOpened": "2024-08-01T18:48:27.876Z",
+              "EditorCaption": ""
             }
           ]
         }
