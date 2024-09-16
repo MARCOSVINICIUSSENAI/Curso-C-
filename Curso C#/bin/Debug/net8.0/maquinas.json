@@ -1,0 +1,9 @@
+[
+  {
+    "Nome": "furadeira",
+    "Marca": "bosh",
+    "AnoFabricacao": 2023,
+    "Tipo": "manual",
+    "EmUso": false
+  }
+]

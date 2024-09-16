@@ -1,0 +1,24 @@
+{
+  "Usuarios": [],
+  "Livros": [
+    {
+      "Titulo": "capitaes de areia",
+      "Autor": "machado",
+      "Ano": 1234,
+      "Paginas": 132
+    },
+    {
+      "Titulo": "lol",
+      "Autor": "raul",
+      "Ano": 2006,
+      "Paginas": 1555
+    },
+    {
+      "Titulo": "kapa",
+      "Autor": "lindo",
+      "Ano": 1999,
+      "Paginas": 202
+    }
+  ],
+  "Emprestimos": []
+}

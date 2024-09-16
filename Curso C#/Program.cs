@@ -2,6 +2,8 @@
 using Curso_C_;
 using System;
 using System.Collections.Generic;
+using System.Text.Json;
+using System.Xml;
 using static Curso_C_.Paradigmas._3_Herança;
 using static Curso_C_.Paradigmas._4_Agregaçao;
 using static Curso_C_.Paradigmas._5_Associacao;
@@ -349,7 +351,7 @@ carro.ExibirInformacoes();
 carro.ExplicarComposicao();*/
 
 
-// Criando funcionários
+/*// Criando funcionários
 FuncionarioMulti funcionario1 = new FuncionarioMulti("Ana");
 FuncionarioMulti funcionario2 = new FuncionarioMulti("Carlos");
 
@@ -364,4 +366,407 @@ projeto.AdicionarFuncionario(funcionario2);
 projeto.ExibirInformacoes();
 
 // Explicando o conceito de multiplicidade
-projeto.ExplicarMultiplicidade();
+projeto.ExplicarMultiplicidade();*/
+
+
+namespace SistemaMaquinasConstrucao
+{
+    class Program
+    {
+        static List<Cliente> clientes = new List<Cliente>();
+        
+        static LojaMaquinas lojaMaquinas = new LojaMaquinas();
+
+        static void Main(string[] args)
+        {
+            CarregarDados();  // Carregar dados ao iniciar o programa
+
+            int opcao = 0;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("==============================================");
+                Console.WriteLine("=== SISTEMA DE LOCAÇÃO E MANUTENÇÃO DE MÁQUINAS ===");
+                Console.WriteLine("==============================================\n");
+                Console.WriteLine("1. Gerenciar Máquinas");
+                Console.WriteLine("2. Gerenciar Clientes");
+                Console.WriteLine("3. Serviços de Manutenção");
+                Console.WriteLine("4. Vender Máquina");
+                Console.WriteLine("0. Sair");
+
+                Console.Write("Escolha uma opção: ");
+                opcao = int.Parse(Console.ReadLine());
+
+                switch (opcao)
+                {
+                    case 1:
+                        MenuMaquinas();
+                        break;
+                    case 2:
+                        MenuClientes();
+                        break;
+                    case 3:
+                        MenuManutencao();
+                        break;
+                    case 4:
+                        VenderMaquina();
+                        break;
+                    case 0:
+                        SalvarMaquinas();  // Salvar dados antes de sair
+                        Console.WriteLine("\nSaindo do programa...");
+                        break;
+                    default:
+                        Console.WriteLine("\nOpção inválida, tente novamente.");
+                        break;
+                }
+            } while (opcao != 0);
+        }
+
+        static void MenuMaquinas()
+        {
+            int opcao = 0;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("==============================================");
+                Console.WriteLine("=========== GERENCIAMENTO DE MÁQUINAS =========");
+                Console.WriteLine("==============================================\n");
+                Console.WriteLine("1. Adicionar Máquina");
+                Console.WriteLine("2. Listar Máquinas");
+                Console.WriteLine("3. Alugar Máquina");
+                Console.WriteLine("4. Devolver Máquina");
+                Console.WriteLine("0. Voltar");
+                Console.WriteLine("==============================================");
+                Console.Write("Escolha uma opção: ");
+                opcao = int.Parse(Console.ReadLine());
+
+                switch (opcao)
+                {
+                    case 1:
+                        AdicionarMaquina();
+                        break;
+                    case 2:
+                        lojaMaquinas.ListarMaquinas();
+                        break;
+                    case 3:
+                        AlugarMaquina();
+                        break;
+                    case 4:
+                        DevolverMaquina();
+                        break;
+                    case 0:
+                        Console.WriteLine("\nVoltando ao menu principal...");
+                        break;
+                    default:
+                        Console.WriteLine("\nOpção inválida, tente novamente.");
+                        break;
+                }
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
+            } while (opcao != 0);
+        }
+
+        static void MenuClientes()
+        {
+            int opcao = 0;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("==============================================");
+                Console.WriteLine("============ GERENCIAMENTO DE CLIENTES ==========");
+                Console.WriteLine("==============================================\n");
+                Console.WriteLine("1. Adicionar Cliente");
+                Console.WriteLine("2. Listar Clientes");
+                Console.WriteLine("3. Remover Cliente");
+                Console.WriteLine("0. Voltar");
+                Console.WriteLine("==============================================");
+                Console.Write("Escolha uma opção: ");
+                opcao = int.Parse(Console.ReadLine());
+
+                switch (opcao)
+                {
+                    case 1:
+                        AdicionarCliente();
+                        break;
+                    case 2:
+                        ListarClientes();
+                        break;
+                    case 3:
+                        RemoverCliente();
+                        break;
+                    case 0:
+                        Console.WriteLine("\nVoltando ao menu principal...");
+                        break;
+                    default:
+                        Console.WriteLine("\nOpção inválida, tente novamente.");
+                        break;
+                }
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
+            } while (opcao != 0);
+        }
+
+        static void MenuManutencao()
+        {
+            int opcao = 0;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("==============================================");
+                Console.WriteLine("============ SERVIÇOS DE MANUTENÇÃO ============");
+                Console.WriteLine("==============================================\n");
+                Console.WriteLine("1. Solicitar Manutenção");
+                Console.WriteLine("2. Listar Manutenções");
+                Console.WriteLine("0. Voltar");
+                Console.WriteLine("==============================================");
+                Console.Write("Escolha uma opção: ");
+                opcao = int.Parse(Console.ReadLine());
+
+                switch (opcao)
+                {
+                    case 1:
+                        SolicitarManutencao();
+                        break;
+                    case 2:
+                        ListarManutencoes();
+                        break;
+                    case 0:
+                        Console.WriteLine("\nVoltando ao menu principal...");
+                        break;
+                    default:
+                        Console.WriteLine("\nOpção inválida, tente novamente.");
+                        break;
+                }
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
+            } while (opcao != 0);
+        }
+
+        static void AdicionarCliente()
+        {
+            Console.Clear();
+            Console.WriteLine("==============================================");
+            Console.WriteLine("=========   ADICIONAR NOVO CLIENTE   =========");
+            Console.WriteLine("==============================================");
+            Console.Write("Digite o nome do cliente: ");
+            string nome = Console.ReadLine();
+            Console.Write("Digite o CPF do cliente: ");
+            string cpf = Console.ReadLine();
+
+            // Verificar se o CPF já existe
+            if (clientes.Any(u => u.Cpf == cpf))
+            {
+                Console.WriteLine("\nCliente com este CPF já existe.");
+                return;
+            }
+
+            Cliente cliente = new Cliente(nome, cpf);
+            clientes.Add(cliente);
+            Console.WriteLine("\nCliente adicionado com sucesso!");
+
+            // Atualizar o arquivo JSON
+            SalvarClientes();
+        }
+
+        static void AdicionarMaquina()
+        {
+            Console.Clear();
+            Console.WriteLine("==============================================");
+            Console.WriteLine("==========   ADICIONAR NOVA MÁQUINA   =========");
+            Console.WriteLine("==============================================");
+            Console.Write("Digite o nome da máquina: ");
+            string nome = Console.ReadLine();
+            Console.Write("Digite a marca da máquina: ");
+            string marca = Console.ReadLine();
+            Console.Write("Digite o ano de fabricação: ");
+            int ano = int.Parse(Console.ReadLine());
+            Console.Write("Digite o tipo da máquina (opcional): ");
+            string tipo = Console.ReadLine();
+
+            Maquina maquina = new Maquina(nome, marca, ano, tipo);
+            lojaMaquinas.AdicionarMaquina(maquina);
+            Console.WriteLine("\nMáquina adicionada com sucesso!");
+        }
+
+
+
+        static void AlugarMaquina()
+        {
+            ListarClientes();
+            Console.Write("\nDigite o número do cliente que irá alugar a máquina: ");
+            int clienteIndice = int.Parse(Console.ReadLine()) - 1;
+
+            if (clienteIndice >= 0 && clienteIndice < clientes.Count)
+            {
+                Cliente cliente = clientes[clienteIndice];
+                Console.Write("Digite o nome da máquina: ");
+                string nomeMaquina = Console.ReadLine();
+                Maquina maquina = lojaMaquinas.BuscarMaquinaPorNome(nomeMaquina);
+
+                if (maquina != null)
+                {
+                    cliente.AlugarMaquina(maquina, lojaMaquinas);
+                    SalvarLocacoes();
+                }
+                else
+                {
+                    Console.WriteLine("\nMáquina não encontrada.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\nNúmero de cliente inválido.");
+            }
+        }
+
+        static void DevolverMaquina()
+        {
+            ListarClientes();
+            Console.Write("\nDigite o número do cliente que irá devolver a máquina: ");
+            int clienteIndice = int.Parse(Console.ReadLine()) - 1;
+
+            if (clienteIndice >= 0 && clienteIndice < clientes.Count)
+            {
+                Cliente cliente = clientes[clienteIndice];
+                Console.Write("Digite o nome da máquina: ");
+                string nomeMaquina = Console.ReadLine();
+                Maquina maquina = lojaMaquinas.BuscarMaquinaPorNome(nomeMaquina);
+
+                if (maquina != null)
+                {
+                    cliente.DevolverMaquina(maquina, lojaMaquinas);
+                    SalvarLocacoes();
+                }
+                else
+                {
+                    Console.WriteLine("\nMáquina não encontrada.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\nNúmero de cliente inválido.");
+            }
+        }
+
+        static void VenderMaquina()
+        {
+            ListarClientes();
+            Console.Write("\nDigite o número do cliente que está comprando a máquina: ");
+            int clienteIndice = int.Parse(Console.ReadLine()) - 1;
+
+            if (clienteIndice >= 0 && clienteIndice < clientes.Count)
+            {
+                Cliente cliente = clientes[clienteIndice];
+                Console.Write("Digite o nome da máquina a ser vendida: ");
+                string nomeMaquina = Console.ReadLine();
+                Maquina maquina = lojaMaquinas.BuscarMaquinaPorNome(nomeMaquina);
+
+                if (maquina != null)
+                {
+                    lojaMaquinas.RemoverMaquina(maquina);
+                    cliente.AdicionarMaquina(maquina);
+                    Console.WriteLine("\nMáquina vendida com sucesso!");
+                    SalvarMaquinas();
+                    SalvarClientes();
+                }
+                else
+                {
+                    Console.WriteLine("\nMáquina não encontrada.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\nNúmero de cliente inválido.");
+            }
+        }
+
+        
+
+        static void SolicitarManutencao()
+        {
+            Console.WriteLine("Solicitação de manutenção registrada.");
+        }
+
+        static void ListarManutencoes()
+        {
+            Console.WriteLine("Manutenções listadas.");
+        }
+
+        static void ListarClientes()
+        {
+            Console.Clear();
+            Console.WriteLine("==============================================");
+            Console.WriteLine("========== LISTA DE CLIENTES ==========");
+            Console.WriteLine("==============================================");
+
+            if (clientes.Count == 0)
+            {
+                Console.WriteLine("Nenhum cliente cadastrado.");
+                return;
+            }
+
+            for (int i = 0; i < clientes.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {clientes[i].Nome} - CPF: {clientes[i].Cpf}");
+            }
+        }
+
+        static void RemoverCliente()
+        {
+            ListarClientes();
+            Console.Write("Digite o número do cliente que deseja remover: ");
+            int clienteIndice = int.Parse(Console.ReadLine()) - 1;
+
+            if (clienteIndice >= 0 && clienteIndice < clientes.Count)
+            {
+                clientes.RemoveAt(clienteIndice);
+                Console.WriteLine("Cliente removido com sucesso!");
+                SalvarClientes();
+            }
+            else
+            {
+                Console.WriteLine("Número de cliente inválido.");
+            }
+        }
+
+        // Funções para salvar e carregar dados em arquivos JSON usando System.Text.Json
+        static void SalvarClientes()
+        {
+            string json = JsonSerializer.Serialize(clientes, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText("clientes.json", json);
+        }
+
+        static void SalvarMaquinas()
+        {
+            string json = JsonSerializer.Serialize(lojaMaquinas.ObterMaquinas(), new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText("maquinas.json", json);
+        }
+
+        static void SalvarLocacoes()
+        {
+            SalvarClientes();
+            SalvarMaquinas();
+        }
+
+        static void CarregarDados()
+        {
+            if (File.Exists("clientes.json"))
+            {
+                string jsonClientes = File.ReadAllText("clientes.json");
+                clientes = JsonSerializer.Deserialize<List<Cliente>>(jsonClientes);
+            }
+
+            if (File.Exists("maquinas.json"))
+            {
+                string jsonMaquinas = File.ReadAllText("maquinas.json");
+                var maquinas = JsonSerializer.Deserialize<List<Maquina>>(jsonMaquinas);
+                foreach (var maquina in maquinas)
+                {
+                    lojaMaquinas.AdicionarMaquina(maquina);
+                }
+            }
+        }
+    }
+
+    // Outras classes para representar as entidades do sistema como Cliente, Maquina, etc.
+}

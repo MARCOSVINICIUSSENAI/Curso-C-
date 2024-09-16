@@ -1,0 +1,13 @@
+[
+  {
+    "Nome": "marcos",
+    "Cpf": "00011144455",
+    "MaquinasAlugadas": [
+      {
+        "Nome": "furadeira",
+        "Marca": "bosch",
+        "AnoFabricacao": 2023
+      }
+    ]
+  }
+]
