@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\livros.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:livros.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\programmaquinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:programmaquinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\usuario.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:usuario.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\emprestimos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:emprestimos.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\programmaquinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:programmaquinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +30,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAowDgBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:12:14.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ProgramMaquinas.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ProgramMaquinas.cs",
               "RelativeDocumentMoniker": "ProgramMaquinas.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ProgramMaquinas.cs",
               "RelativeToolTip": "ProgramMaquinas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIcAAAAAAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAiwIIAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T19:39:25.163Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T18:28:24.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Livros.json",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Livros.json",
-              "RelativeDocumentMoniker": "Livros.json",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Livros.json",
-              "RelativeToolTip": "Livros.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-16T18:34:36.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Usuario.json",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Usuario.json",
-              "RelativeDocumentMoniker": "Usuario.json",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Usuario.json",
-              "RelativeToolTip": "Usuario.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-16T18:34:24.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Emprestimos.json",
-              "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Emprestimos.json",
-              "RelativeDocumentMoniker": "Emprestimos.json",
-              "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Emprestimos.json",
-              "RelativeToolTip": "Emprestimos.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-16T18:31:18.876Z"
             }
           ]
         }

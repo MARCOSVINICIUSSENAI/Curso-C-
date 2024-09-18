@@ -6,8 +6,27 @@
       {
         "Nome": "furadeira",
         "Marca": "bosch",
-        "AnoFabricacao": 2023
+        "AnoFabricacao": 2023,
+        "Tipo": null,
+        "EmUso": false
+      },
+      {
+        "Nome": "furadeira",
+        "Marca": "bosh",
+        "AnoFabricacao": 2023,
+        "Tipo": "manual",
+        "EmUso": false
       }
     ]
+  },
+  {
+    "Nome": "marcos",
+    "Cpf": "00000000000",
+    "MaquinasAlugadas": []
+  },
+  {
+    "Nome": "",
+    "Cpf": "",
+    "MaquinasAlugadas": []
   }
 ]

@@ -117,22 +117,36 @@ namespace Curso_C_
         // Novo método para listar todas as máquinas
         public void ListarMaquinas()
         {
-            Console.WriteLine("==============================================");
-            Console.WriteLine("=========== LISTA DE MÁQUINAS ===============");
-            Console.WriteLine("==============================================");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("╔═════════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("║                     LISTA DE MÁQUINAS                               ║");
+            Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
+            Console.ResetColor();
             if (maquinas.Count == 0)
             {
-                Console.WriteLine("Nenhuma máquina disponível.");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("╔═════════════════════════════════════════════════════════════════════╗");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("║                       NENHUMA MÁQUINA DISPONÍVEL                    ║");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
+                Console.ResetColor();
             }
             else
             {
                 foreach (var maquina in maquinas)
                 {
-                    maquina.ExibirDetalhes();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("╔═════════════════════════════════════════════════════════════════════╗");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    maquina.ExibirDetalhes(); // Supondo que ExibirDetalhes já esteja formatado como desejado
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
+                    Console.ResetColor();
                 }
             }
+
         }
+
+     }
     }
-
-
-}

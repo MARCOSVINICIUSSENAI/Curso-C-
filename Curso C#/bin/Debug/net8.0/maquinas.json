@@ -1,9 +1,16 @@
 [
   {
     "Nome": "furadeira",
-    "Marca": "bosh",
+    "Marca": "bosch",
     "AnoFabricacao": 2023,
-    "Tipo": "manual",
+    "Tipo": "",
+    "EmUso": false
+  },
+  {
+    "Nome": "motoserra",
+    "Marca": "bosch",
+    "AnoFabricacao": 2022,
+    "Tipo": "",
     "EmUso": false
   }
 ]
