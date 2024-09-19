@@ -71,23 +71,60 @@ internal class Program
         do
         {
             Console.Clear();
-           Console.Clear();
-Console.ForegroundColor = ConsoleColor.DarkCyan;
-Console.WriteLine("╔═════════════════════════════════════════════════════════════════════╗");
-Console.WriteLine("║                   GERENCIAMENTO DE MÁQUINAS                         ║");
-Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝\n");
-Console.ForegroundColor = ConsoleColor.Green;
-Console.WriteLine($"Data e Hora: {DateTime.Now}");
-Console.WriteLine();
-Console.WriteLine("╔═════════════════════════════════════════════════════════════════════╗");
-Console.WriteLine("║ 1. Adicionar Máquina                                                ║");
-Console.WriteLine("║ 2. Listar Máquinas                                                  ║");
-Console.WriteLine("║ 3. Alugar Máquina                                                   ║");
-Console.WriteLine("║ 4. Devolver Máquina                                                 ║");
-Console.WriteLine("║ 0. Voltar                                                           ║");
-Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
-Console.ResetColor();
-Console.Write("Escolha uma opção: ");
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.WriteLine("╔═════════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("║                   GERENCIAMENTO DE MÁQUINAS                         ║");
+            Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝\n");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Data e Hora: {DateTime.Now}");
+            Console.WriteLine();
+            Console.WriteLine("╔═════════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("║ 1. Adicionar Máquina                                                ║");
+            Console.WriteLine("║ 2. Listar Máquinas                                                  ║");
+            Console.WriteLine("║ 3. Alugar Máquina                                                   ║");
+            Console.WriteLine("║ 4. Devolver Máquina                                                 ║");
+            Console.WriteLine("║ 0. Voltar                                                           ║");
+            Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
+            Console.ResetColor();
+
+            // Validação da entrada de opção
+           
+            do
+            {
+                Console.Write("Escolha uma opção: ");
+                string input = Console.ReadLine();
+
+                if (!int.TryParse(input, out opcao) || opcao < 0 || opcao > 4)
+                {
+                    Console.WriteLine("\nOpção inválida. Por favor, escolha uma opção entre 0 e 4.");
+                }
+
+            } while (opcao < 0 || opcao > 4);
+
+            // Lógica baseada na escolha do usuário
+            switch (opcao)
+            {
+                case 1:
+                    // Chamar a função para adicionar máquina
+                    AdicionarMaquina();
+                    break;
+                case 2:
+                    // Chamar a função para adicionar máquina
+                    lojaMaquinas.ListarMaquinas();
+                    break;
+                case 3:
+                    // Chamar a função para alugar máquina
+                    AlugarMaquina();
+                    break;
+                case 4:
+                    // Chamar a função para devolver máquina
+                    DevolverMaquina();
+                    break;
+                case 0:
+                    Console.WriteLine("\nVoltando ao menu principal...");
+                    break;
+            }
+
 
             Console.Write("Escolha uma opção: ");
             opcao = int.Parse(Console.ReadLine());
@@ -138,8 +175,41 @@ Console.Write("Escolha uma opção: ");
             Console.WriteLine("║ 0. Voltar                                                           ║");
             Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
             Console.ResetColor();
-            Console.Write("Escolha uma opção: ");
-            opcao = int.Parse(Console.ReadLine());
+
+            // Validação da entrada de opção
+           
+            do
+            {
+                Console.Write("Escolha uma opção: ");
+                string input = Console.ReadLine();
+
+                if (!int.TryParse(input, out opcao) || opcao < 0 || opcao > 3)
+                {
+                    Console.WriteLine("\nOpção inválida. Por favor, escolha uma opção entre 0 e 3.");
+                }
+
+            } while (opcao < 0 || opcao > 3);
+
+            // Lógica baseada na escolha do usuário
+            switch (opcao)
+            {
+                case 1:
+                    // Chamar a função para adicionar cliente
+                    AdicionarCliente();
+                    break;
+                case 2:
+                    // Chamar a função para listar clientes
+                    ListarClientes();
+                    break;
+                case 3:
+                    // Chamar a função para remover cliente
+                    RemoverCliente();
+                    break;
+                case 0:
+                    Console.WriteLine("\nVoltando ao menu principal...");
+                    break;
+            }
+
             switch (opcao)
             {
                 case 1:
@@ -183,8 +253,35 @@ Console.Write("Escolha uma opção: ");
             Console.WriteLine("║ 0. Voltar                                                           ║");
             Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
             Console.ResetColor();
-            Console.Write("Escolha uma opção: ");
-            opcao = int.Parse(Console.ReadLine());
+
+            // Validação da entrada de opção
+          
+            do
+            {
+                Console.Write("Escolha uma opção: ");
+                string input = Console.ReadLine();
+
+                if (!int.TryParse(input, out opcao) || opcao < 0 || opcao > 2)
+                {
+                    Console.WriteLine("\nOpção inválida. Por favor, escolha uma opção entre 0 e 2.");
+                }
+
+            } while (opcao < 0 || opcao > 2);
+
+            // Executa a lógica correspondente à opção escolhida
+            switch (opcao)
+            {
+                case 1:
+                    // Lógica para solicitar manutenção
+                    break;
+                case 2:
+                    // Lógica para listar manutenções
+                    break;
+                case 0:
+                    Console.WriteLine("\nVoltando ao menu principal...");
+                    break;
+            }
+
             switch (opcao)
             {
                 case 1:
@@ -215,19 +312,49 @@ Console.Write("Escolha uma opção: ");
         Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Data e Hora: {DateTime.Now}");
-        Console.Write("Digite o nome do cliente: ");
-        string nome = Console.ReadLine();
-        Console.Write("Digite o CPF do cliente: ");
-        string cpf = Console.ReadLine();
-        if (clientes.Any((Cliente u) => u.Cpf == cpf))
+
+        // Validação do nome do cliente
+        string nome;
+        do
         {
-            Console.WriteLine("\nCliente com este CPF já existe.");
-            return;
-        }
+            Console.Write("Digite o nome do cliente: ");
+            nome = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(nome))
+            {
+                Console.WriteLine("Nome inválido. Por favor, insira um nome válido.");
+            }
+        } while (string.IsNullOrWhiteSpace(nome));
+
+        // Validação do CPF do cliente
+        string cpf;
+        do
+        {
+            Console.Write("Digite o CPF do cliente (somente números): ");
+            cpf = Console.ReadLine();
+
+            // Checagem se o CPF é válido (11 dígitos numéricos)
+            if (cpf.Length != 11 || !cpf.All(char.IsDigit))
+            {
+                Console.WriteLine("CPF inválido. Por favor, insira um CPF válido com 11 dígitos.");
+                continue;
+            }
+
+            // Verificação se o CPF já está cadastrado
+            if (clientes.Any((Cliente u) => u.Cpf == cpf))
+            {
+                Console.WriteLine("\nCliente com este CPF já existe.");
+                return;
+            }
+
+        } while (cpf.Length != 11 || !cpf.All(char.IsDigit));
+
+        // Criar cliente e adicionar à lista
         Cliente cliente = new Cliente(nome, cpf);
         clientes.Add(cliente);
+
         Console.WriteLine("\nCliente adicionado com sucesso!");
         SalvarClientes();
+
     }
 
     private static void AdicionarMaquina()
@@ -239,17 +366,57 @@ Console.Write("Escolha uma opção: ");
         Console.WriteLine("╚═════════════════════════════════════════════════════════════════════╝");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Data e Hora: {DateTime.Now}");
-        Console.Write("Digite o nome da máquina: ");
-        string nome = Console.ReadLine();
-        Console.Write("Digite a marca da máquina: ");
-        string marca = Console.ReadLine();
-        Console.Write("Digite o ano de fabricação: ");
-        int ano = int.Parse(Console.ReadLine());
+
+        // Validação do nome da máquina
+        string nome;
+        do
+        {
+            Console.Write("Digite o nome da máquina: ");
+            nome = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(nome))
+            {
+                Console.WriteLine("Nome inválido. Por favor, insira um nome válido.");
+            }
+        } while (string.IsNullOrWhiteSpace(nome));
+
+        // Validação da marca da máquina
+        string marca;
+        do
+        {
+            Console.Write("Digite a marca da máquina: ");
+            marca = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(marca))
+            {
+                Console.WriteLine("Marca inválida. Por favor, insira uma marca válida.");
+            }
+        } while (string.IsNullOrWhiteSpace(marca));
+
+        // Validação do ano de fabricação
+        int ano;
+        while (true)
+        {
+            Console.Write("Digite o ano de fabricação: ");
+            if (int.TryParse(Console.ReadLine(), out ano) && ano > 1900 && ano <= DateTime.Now.Year)
+            {
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Ano inválido. Insira um ano de fabricação entre 1900 e o ano atual.");
+            }
+        }
+
+        // Validação do tipo da máquina (opcional)
         Console.Write("Digite o tipo da máquina (opcional): ");
-        string tipo = Console.ReadLine();
+        string tipo = Console.ReadLine(); // Tipo é opcional, então pode estar em branco
+
+        // Criação da máquina
         Maquina maquina = new Maquina(nome, marca, ano, tipo);
+
+        // Adicionando a máquina à loja
         lojaMaquinas.AdicionarMaquina(maquina);
         Console.WriteLine("\nMáquina adicionada com sucesso!");
+
     }
 
     private static void AlugarMaquina()
@@ -305,6 +472,8 @@ Console.Write("Escolha uma opção: ");
             Console.WriteLine("\nNúmero de cliente inválido.");
         }
     }
+
+
 
     private static void VenderMaquina()
     {

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\programmaquinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:programmaquinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|c:\\users\\aluno noite\\downloads\\curso c#\\curso c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3CAF49-2C21-4C76-9F78-6676D5D7528C}|Curso C#.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +30,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAowDgBAAAIAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAowG0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T18:12:14.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProgramMaquinas.cs",
               "DocumentMoniker": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ProgramMaquinas.cs",
               "RelativeDocumentMoniker": "ProgramMaquinas.cs",
               "ToolTip": "C:\\Users\\Aluno Noite\\Downloads\\Curso C#\\Curso C#\\ProgramMaquinas.cs",
               "RelativeToolTip": "ProgramMaquinas.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAiwIIAAAA8AAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAIwHUAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T19:39:25.163Z",
               "EditorCaption": ""
